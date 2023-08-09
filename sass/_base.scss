@@ -1,10 +1,45 @@
-@import "variable";
-@import "mixings";
+@use "variable" as var;
+@use "mixings" as mix;
 
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: $mainFont;
+    font-family: var.$mainFont;
+}
+
+
+
+.header {
+    border: 1px solid black;
+
+    background-color: var.$darkColor;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: .5em 2em; 
+
+    &__logo{
+        @include mix.fontConfig(var.$ligthColor, 24px )
+    }
+    
+    .nav{
+        display: flex;
+        align-items: center;
+        &__menu{
+            display:flex;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        &__item{
+            list-style: none;
+        }
+        &__link{
+            text-decoration: none;
+            @include mix.fontConfig(var.$secundaryColor, 18px )
+            
+        }
+    }
 }
