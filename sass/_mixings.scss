@@ -1,0 +1,8 @@
+@import "variable";
+
+@mixin fontConfig($color: $darkColor, $size: 1rem, $fW: 400, $fstyle: normal) {
+    color: $color;
+    font-size: $size;
+    font-weight: $fW;
+    font-style: $fstyle;
+}
