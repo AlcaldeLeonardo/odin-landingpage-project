@@ -1,6 +1,6 @@
-@import "variable";
+@use "variable" as var;
 
-@mixin fontConfig($color: $darkColor, $size: 1rem, $fW: 400, $fstyle: normal) {
+@mixin fontConfig($color: var.$darkColor, $size: 1rem, $fW: 400, $fstyle: normal) {
     color: $color;
     font-size: $size;
     font-weight: $fW;
