@@ -158,3 +158,12 @@
         border: var.$ligthColor solid 2px;
     }
 }
+
+.footer{
+    background-color: var.$darkColor;
+    padding: 2em 0;
+    &__text{
+        text-align: center;
+        @include mix.fontConfig(var.$ligthColor, 18px)
+    }
+}

@@ -166,4 +166,16 @@
   border: #F9FAF8 solid 2px;
 }
 
+.footer {
+  background-color: #1f2937;
+  padding: 2em 0;
+}
+.footer__text {
+  text-align: center;
+  color: #F9FAF8;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /*# sourceMappingURL=index.css.map */
