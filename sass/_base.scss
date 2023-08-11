@@ -12,17 +12,16 @@
 
 
 .header {
-    border: 1px solid black;
 
     background-color: var.$darkColor;
 
     display: flex;
     justify-content: space-between;
 
-    padding: .5em 2em; 
+    padding: 1em 10em; 
 
     &__logo{
-        @include mix.fontConfig(var.$ligthColor, 24px )
+        @include mix.fontConfig(var.$ligthColor, 24px, bold)
     }
     
     .nav{
@@ -38,8 +37,48 @@
         }
         &__link{
             text-decoration: none;
-            @include mix.fontConfig(var.$secundaryColor, 18px )
+            @include mix.fontConfig(var.$secundaryColor, 18px)
             
         }
+    }
+}
+
+.jumbotron{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 7em 10em;
+
+    background-color: var.$darkColor;
+
+    .description{
+        max-width: 450px;
+        &__title{
+            @include mix.fontConfig(var.$ligthColor, 48px, bold)
+        }
+        &__paragraph{
+            @include mix.fontConfig(var.$secundaryColor, 18px)
+        }
+    }
+    &__ctaBtn{
+
+        margin-top: 1em;
+        padding: .4em 2em;
+
+        border: none;
+        border-radius: 5px;
+
+        background-color: var.$btnBackgroundColor;
+
+        @include mix.fontConfig(var.$ligthColor, 18px, bold);
+    }
+
+    &__img{
+        width: 500px;
+        height: 250px;
+        // flex: 1;
+        background-color: #ccc5;
+        border-radius: 5px;
+        color: var.$ligthColor;
     }
 }
