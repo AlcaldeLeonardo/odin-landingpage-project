@@ -82,3 +82,33 @@
         color: var.$ligthColor;
     }
 }
+
+.infoRandom{
+    &__title{
+        margin: 1em;
+        text-align: center;
+        @include mix.fontConfig(var.$darkColor,36px,900)
+    }
+
+    &__cards{
+        display: flex;
+        justify-content: center;
+        gap: 3em;
+    }
+    .card{
+        max-width: 170px;
+        display: flex;
+        flex-direction: column;
+        gap: .5em;
+        &__img{
+            width: 170px;
+            height: 170px;
+            border: var.$btnBackgroundColor solid 4px;
+            border-radius: 15px;
+        }
+        &__description{
+            text-align: center;
+            @include mix.fontConfig(#666, 18px)
+        }
+    }
+}
