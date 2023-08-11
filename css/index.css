@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,300;1,400&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -78,6 +78,9 @@
   color: #F9FAF8;
 }
 
+.infoRandom {
+  margin-bottom: 8em;
+}
 .infoRandom__title {
   margin: 1em;
   text-align: center;
@@ -88,6 +91,7 @@
 }
 .infoRandom__cards {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 3em;
 }
@@ -109,6 +113,30 @@
   font-size: 18px;
   font-weight: 400;
   font-style: normal;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e7eb;
+  padding: 7em 15em;
+}
+.quote__text {
+  color: #1f2937;
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+}
+.quote__autor {
+  align-self: flex-end;
+  padding-right: 5em;
+  color: #1f2937;
+  font-size: 24px;
+  font-weight: 900;
+  font-style: normal;
+}
+.quote__autor::before {
+  content: "-";
 }
 
 /*# sourceMappingURL=index.css.map */

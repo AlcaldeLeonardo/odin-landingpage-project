@@ -84,6 +84,7 @@
 }
 
 .infoRandom{
+    margin-bottom: 8em;;
     &__title{
         margin: 1em;
         text-align: center;
@@ -92,6 +93,7 @@
 
     &__cards{
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         gap: 3em;
     }
@@ -109,6 +111,25 @@
         &__description{
             text-align: center;
             @include mix.fontConfig(#666, 18px)
+        }
+    }
+}
+
+.quote{
+    display: flex;
+    flex-direction: column;
+
+    background-color: var.$secundaryColor;
+    padding: 7em 15em;
+    &__text{
+        @include mix.fontConfig(var.$darkColor, 36px, 300, italic);
+    }
+    &__autor{
+        align-self: flex-end;
+        padding-right: 5em;
+        @include mix.fontConfig(var.$darkColor, 24px, 900);
+        &::before{
+            content: "-";
         }
     }
 }
