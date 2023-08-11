@@ -15,4 +15,5 @@ A project proposed by Odin Projet where knowledge in flexbox is reaffirmed
 
 ## News
 ### August 11, 2023
-   * Basic web page according to reference image completed 
+   * Basic web page according to reference image completed.
+      * [Look at the result here!!](https://alcaldeleonardo.github.io/odin-landingpage-project/)
