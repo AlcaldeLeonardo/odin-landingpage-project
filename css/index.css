@@ -6,6 +6,17 @@
   font-family: "Roboto", sans-serif;
 }
 
+.btn {
+  color: #F9FAF8;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  border-radius: 5px;
+  margin-top: 1em;
+  padding: 0.4em 2em;
+  background-color: #3882f6;
+}
+
 .header {
   background-color: #1f2937;
   display: flex;
@@ -60,15 +71,7 @@
   font-style: normal;
 }
 .jumbotron__ctaBtn {
-  margin-top: 1em;
-  padding: 0.4em 2em;
   border: none;
-  border-radius: 5px;
-  background-color: #3882f6;
-  color: #F9FAF8;
-  font-size: 18px;
-  font-weight: bold;
-  font-style: normal;
 }
 .jumbotron__img {
   width: 500px;
@@ -137,6 +140,30 @@
 }
 .quote__autor::before {
   content: "-";
+}
+
+.callToAction {
+  display: flex;
+  justify-content: space-around;
+  background-color: #3882f6;
+  border-radius: 7px;
+  margin: 10em;
+  padding: 3em;
+}
+.callToAction__bold {
+  color: #F9FAF8;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+}
+.callToAction__normal {
+  color: #ccc;
+  font-size: 18;
+  font-weight: 400;
+  font-style: normal;
+}
+.callToAction__btn {
+  border: #F9FAF8 solid 2px;
 }
 
 /*# sourceMappingURL=index.css.map */

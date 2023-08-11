@@ -10,6 +10,13 @@
 }
 
 
+.btn{
+    @include mix.fontConfig(var.$ligthColor, 18px, bold);
+    border-radius: 5px;
+    margin-top: 1em;
+    padding: .4em 2em;
+    background-color: var.$btnBackgroundColor;
+}
 
 .header {
 
@@ -62,17 +69,13 @@
     }
     &__ctaBtn{
 
-        margin-top: 1em;
-        padding: .4em 2em;
-
+        
         border: none;
-        border-radius: 5px;
-
-        background-color: var.$btnBackgroundColor;
-
-        @include mix.fontConfig(var.$ligthColor, 18px, bold);
+        
+        
     }
-
+    
+    
     &__img{
         width: 500px;
         height: 250px;
@@ -131,5 +134,27 @@
         &::before{
             content: "-";
         }
+    }
+}
+
+.callToAction{
+    display: flex;
+    justify-content: space-around;
+
+    background-color: var.$btnBackgroundColor;
+
+    border-radius: 7px;
+
+    margin: 10em;
+    padding: 3em;
+
+    &__bold{
+        @include mix.fontConfig(var.$ligthColor, 24px,bold)
+    }
+    &__normal{
+        @include mix.fontConfig(#ccc, 18,400)
+    }
+    &__btn{
+        border: var.$ligthColor solid 2px;
     }
 }
